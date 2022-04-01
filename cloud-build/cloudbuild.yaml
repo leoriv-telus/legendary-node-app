@@ -16,6 +16,6 @@ steps:
 # Deploy container image to Cloud Run
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
-  args: ['run', 'deploy', 'my-service', '--image', 'gcr.io/$PROJECT_ID/magical_app/my-image']
+  args: ['run', 'deploy', 'my-service', '--image', 'gcr.io/$PROJECT_ID/magical_app/my-image', '--region', 'northamerica-northeast2']
 images:
 - gcr.io/$PROJECT_ID/magical_app/my-image
